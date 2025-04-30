@@ -4,7 +4,7 @@
 ### AIM: 
 To write a program to create graph using waypoints and use A* algorithm to find path between source and destination.
 ### Algorithm:
-```
+
 1. Create a New Unity Project by Open the  Unity Hub and create a new 3D Project,Name the project (e.g., Pathfinding).
 2. Create Waypoints in Scene => Create empty or sphere GameObjects ( minimum 4)  and  name it as Waypoint1, Waypoint2, ..., Waypoint4
    Position them freely in the scene (not on a grid)
@@ -14,7 +14,7 @@ To write a program to create graph using waypoints and use A* algorithm to find 
 6. Attach Waypoint script to it
 7.Write a Pathfinding algorithm using A*search
 8. Create a Game Object for Player ( choose capsule or any others) and attach the script to move player from start to end waypoints
-```  
+
 ### Program:
 
 **#1.Waypoint.cs**
@@ -35,8 +35,9 @@ public class Waypoint : MonoBehaviour {
         }
     }
 }
-```cs
+```
 **#2. WaypointGraph.cs**
+```cs
 using UnityEngine;
 
 public class WaypointGraph : MonoBehaviour {
@@ -46,8 +47,9 @@ public class WaypointGraph : MonoBehaviour {
         allWaypoints = FindObjectsOfType<Waypoint>();
     }
 }
-```cs
+```
 **#3.Pathfinding.cs**
+```cs
 using System.Collections.Generic;
 using UnityEngine;
 public class Pathfinding : MonoBehaviour {
