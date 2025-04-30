@@ -1,6 +1,6 @@
 # Ex.No: 8  Implementation of Path finding using A* algorithm
 ### DATE:                                                                            
-### REGISTER NUMBER : 
+### REGISTER NUMBER : 212222240048
 ### AIM: 
 To write a program to create graph using waypoints and use A* algorithm to find path between source and destination.
 ### Algorithm:
@@ -16,8 +16,9 @@ To write a program to create graph using waypoints and use A* algorithm to find 
 8. Create a Game Object for Player ( choose capsule or any others) and attach the script to move player from start to end waypoints
 ```  
 ### Program:
-```
+
 **#1.Waypoint.cs**
+```cs
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -34,6 +35,7 @@ public class Waypoint : MonoBehaviour {
         }
     }
 }
+```cs
 **#2. WaypointGraph.cs**
 using UnityEngine;
 
@@ -44,6 +46,7 @@ public class WaypointGraph : MonoBehaviour {
         allWaypoints = FindObjectsOfType<Waypoint>();
     }
 }
+```cs
 **#3.Pathfinding.cs**
 using System.Collections.Generic;
 using UnityEngine;
@@ -103,8 +106,9 @@ public class Pathfinding : MonoBehaviour {
         return path;
     }
 }
-
+```
 **#4.AICharacter.cs**
+```cs
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -131,12 +135,20 @@ public class AICharacter : MonoBehaviour {
         }
     }
 }
-Check the following
-1. Waypoints placed in scene
-2. Neighbors set manually via Inspector
-3. WaypointGraph script on a manager
-4. AICharacter assigned a start and goal
+```
+Check the following:
+1. Waypoints placed in scene.
+2. Neighbors set manually via Inspector.
+3. WaypointGraph script on a manager.
+4. AICharacter assigned a start and goal.
+
 ### Output:
+![image](https://github.com/user-attachments/assets/7f1110b3-0de7-4408-99cb-a45b7587cd9b)
+
+![image](https://github.com/user-attachments/assets/291de61c-58cf-4bf6-a091-75b216f5f597)
+
+
+
 
 
 
