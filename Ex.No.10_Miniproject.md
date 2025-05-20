@@ -70,7 +70,7 @@ Spawner.cs
 ```  
 ### Program:
 Player.cs
-```
+```cs
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -143,7 +143,7 @@ public class Player : MonoBehaviour
 }
 ```
 GameManager.cs
-```
+```cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
 }
 ```
 Parallax.cs
-```
+```cs
 using UnityEngine;
 
 public class Parallax : MonoBehaviour
@@ -244,7 +244,7 @@ public class Parallax : MonoBehaviour
 
 ```
 Pipes.cs
-```
+```cs
 using UnityEngine;
 
 public class Pipes : MonoBehaviour
@@ -275,7 +275,7 @@ public class Pipes : MonoBehaviour
 }
 ```
 Spawner.cs
-```
+```cs
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
